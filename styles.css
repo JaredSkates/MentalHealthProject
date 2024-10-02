@@ -10,11 +10,13 @@ h2, h3, h4, h5 {
     display: contents;
 
 }
-
 .dataImg {
     height: 60%;
     width: 50%;
     display: block, flex;
+}
+.newsTitles {
+    color: black;
 }
 
 /* Select specific attributes in a class */
