@@ -1,0 +1,29 @@
+/* Learning to use CSS */
+h2, h3, h4, h5 {
+    /* We can use multiple tags and classes to change attributes*/
+    color:rgb(231, 231, 231);
+    font-style: italic;
+}
+
+/* class selectors start with "." || This applies to all classes named "Important" */
+.Important {
+    display: contents;
+
+}
+
+.dataImg {
+    height: 60%;
+    width: 50%;
+    display: block, flex;
+}
+
+/* Select specific attributes in a class */
+h2.Important {
+    font-size: larger;
+}
+
+/* "#" is for id's */
+#favorite {
+    color: purple;
+}
+
