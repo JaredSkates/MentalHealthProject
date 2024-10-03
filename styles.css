@@ -15,7 +15,14 @@ body {
 
 /* Body styling */
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+h2, h3, h4, p {
+    color: white;
+}
+h2 {
+    font-weight: lighter;
+    
 }
 
 
@@ -107,26 +114,61 @@ button:active {
    About Section Styling
 ----------------------------------------- */
 
-.aboutMentalHealth {
+.aboutMentalHealth, #introVideo {
     position: relative; /* Establishes a positioning context for absolute positioning inside this element */
     overflow: hidden; /* Ensures that any overflow is hidden */
-    padding: 20px; /* Adds padding around the content */
+    padding: 60px; /* Adds padding around the content */
     min-height: 30px; /* Sets a minimum height for the section */
-}
-
-.aboutMentalHealth > p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items: center;
 }
 
-/* -----------------------------------------
-   Source and Data Section Styling
------------------------------------------ */
+.aboutMentalHealth > p {
+    width: 50%;
+    padding: 10px;
+}
+
+.sourceLink {
+    color: white;
+    font-weight: lighter;
+    font-size: small;
+}
 
 .sourceLink {
     font-style: italic; /* Makes the source link italic */
+}
+
+
+/* -----------------------------------------
+   Data Section Styling
+----------------------------------------- */
+.data-container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.data-container-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.dataSourceLink{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-right: 235px;
+}
+
+li {
+    font-weight: 600;
+    margin: 50px;
 }
 
 /* -----------------------------------------
