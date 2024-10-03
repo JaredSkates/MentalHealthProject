@@ -1,31 +1,138 @@
-/* Learning to use CSS */
-h2, h3, h4, h5 {
-    /* We can use multiple tags and classes to change attributes*/
-    color:rgb(231, 231, 231);
-    font-style: italic;
+/* -----------------------------------------
+   General Styling
+----------------------------------------- */
+
+/* font styling */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+
+/* Body styling */
+body {
+    background-color: rgb(255, 255, 255);
 }
 
-/* class selectors start with "." || This applies to all classes named "Important" */
-.Important {
-    display: contents;
 
+/* -----------------------------------------
+   Header Styling
+----------------------------------------- */
+
+.top-border {
+    background-color: hsl(0, 0%, 0%); /* Dark background */
+    display: flex; /* Enables flexbox */
 }
+
+.top-border > h1 {
+    color: rgb(251, 248, 248);
+    margin-left: 70px;
+    font-weight: 100;
+    
+}
+
+button {
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+#btn-first {
+    margin-left: auto;
+    
+}
+
+#btn-last {
+    margin-right: 50px;
+}
+
+/* -----------------------------------------
+   Image Styling
+----------------------------------------- */
+
 .dataImg {
-    height: 60%;
-    width: 50%;
-    display: block, flex;
-}
-.newsTitles {
-    color: black;
-}
-
-/* Select specific attributes in a class */
-h2.Important {
-    font-size: larger;
+    height: 60%; /* Sets the height to 60% of its parent */
+    width: 50%; /* Sets the width to 50% of its parent */
+    display: block; /* Ensures the image is displayed as a block element */
+    margin: 20px;
+    border: 5px solid;
+    border-radius: 10px;
 }
 
-/* "#" is for id's */
-#favorite {
-    color: purple;
+/* -----------------------------------------
+   Video Background Styling
+----------------------------------------- */
+
+.video-background {
+    width: 100%; /* Sets the width to 100% of its parent */
+    height: 100%; /* Sets the height to 100% of its parent */
+    overflow: hidden; /* Hides any overflow */
 }
 
+.video-background video {
+    width: 100%; /* Sets the video width to 100% of its container */
+    height: 100%; /* Sets the video height to 100% of its container */
+    object-fit: cover; /* Ensures the video covers the container without distortion */
+}
+
+/* -----------------------------------------
+   Button Styling
+----------------------------------------- */
+
+button {
+    border: none; /* Removes default border */
+    border-radius: 10px; /* Rounds the corners of the button */
+    padding: 5px; /* Adds padding inside the button */
+    font-family: 'Raleway', serif;
+    color: white; /* Sets the text color to white */
+    background-color: transparent;
+    font-size: large;
+}
+button:hover {
+    cursor: pointer;
+    color: hsl(169, 42%, 70%);
+}
+button:active {
+    color: hsl(169, 31%, 42%);
+}
+
+
+/* -----------------------------------------
+   About Section Styling
+----------------------------------------- */
+
+.aboutMentalHealth {
+    position: relative; /* Establishes a positioning context for absolute positioning inside this element */
+    overflow: hidden; /* Ensures that any overflow is hidden */
+    padding: 20px; /* Adds padding around the content */
+    min-height: 30px; /* Sets a minimum height for the section */
+}
+
+.aboutMentalHealth > p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* -----------------------------------------
+   Source and Data Section Styling
+----------------------------------------- */
+
+.sourceLink {
+    font-style: italic; /* Makes the source link italic */
+}
+
+/* -----------------------------------------
+   Impact Section Styling
+----------------------------------------- */
+
+.impact {
+    margin: 20px 0; /* Adds margin for spacing */
+}

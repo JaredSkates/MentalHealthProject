@@ -1,113 +1,122 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <title>MentalHorizon</title> <!-- the content here will only show in the tab and in the metadata about the page -->
-
-    <style>
-        h1 {background-color: rgb(255, 255, 255);}
-        body {background-color: rgb(6, 126, 195);}
-        .important {font-family: Georgia, 'Times New Roman', Times, serif;} 
-        .sources {display: block;}
-    </style> 
-    
+    <title>Mental Horizon</title> <!-- Title shown in the tab -->
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+
     <link href="reset.css" rel="stylesheet" type="text/css" />
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="assets/headerIcon.png">
+
     <script type="text/javascript" src="script.js"></script>
+
 </head>
 
 <body>
 
-    <!--- Headings --->
-    <img  /> <!-- if you want to add an image, use this tag and link to the actual image location in your project with the src attribute -->
-    <h1 class="important">My Activism Project: Mental Health</h1>
-    <h3>
-        Mind Matters: Your Go-To Hub for Mental Wellness—Because 
-        Taking Care of Your Mind is Just as 
-        Important as Taking Care of Your Body!
-    </h3>
+    <!-- -----------------------------------------
+         Header Section
+    ----------------------------------------- -->
+    <div class="top-border">
+        <h1>Mental Horizon</h1>
+        <button id="btn-first" type="button" onclick="talkSpacePage()">Talk Space</button>
+        <button type="button">Videos</button>
+        <button itype="button">Articles</button>
+        <button id="btn-last" type="button">Resources</button>
+    </div>
 
-    <!-- Need to do: Create functionality and section for both buttons -->
-    <button type="button">Talk Space</button>
-    <button type="button">Current Resources</button>
+    <!-- -----------------------------------------
+         Video Background Section
+    ----------------------------------------- -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="assets/AdobeStock_256249524.mp4" type="video/mp4">
+        </video>
+    </div>
 
+    <!-- -----------------------------------------
+         About Mental Health Section
+    ----------------------------------------- -->
+    <div class="aboutMentalHealth">
+        <h2 id="about-description">What is Mental Health?</h2>
+        <p>
+            Mental health is about our feelings, thoughts, and how we connect with others. 
+            It affects how we handle stress, relate to friends, and make choices in life. 
+        </p>
+        <p>
+            Sadly, many people struggle with mental health issues like anxiety and depression, which can make them feel alone and overwhelmed. 
+            Because of the stigma surrounding these issues, it can be hard for them to ask for help. 
+        </p>
+        <p>
+            By talking openly about mental health and supporting one another, we can create a community where everyone feels safe to seek help and take care of their well-being. 
+            Remember, it’s okay to talk about how you feel!
+        </p>
 
-    <!--- About --->
-    <h2 id="interesting">What is Mental Health?</h2>
-    <p>
-        Mental health is about our feelings, thoughts, and how we connect with others. 
-        It affects how we handle stress, relate to friends, and make choices in life. 
-        Sadly, many people struggle with mental health issues like anxiety and depression, which can make them feel alone and overwhelmed. 
-        Because of the stigma surrounding these issues, it can be hard for them to ask for help. 
-        By talking openly about mental health and supporting one another, we can create a community where everyone feels safe to seek help and take care of their well-being. 
-        Remember, it’s okay to talk about how you feel!
-    </p>
+        <!-- YouTube Video Section -->
+        <div id="introVideo">
+            <iframe width="560" height="315" style="border: 5px solid white; border-radius: 10px;" src="https://www.youtube.com/embed/DxIDKZHW3-E?si=SrA-0Ct9J3RS4K3h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <a class="sourceLink" href="https://www.youtube.com/@AnnaFreudNCCF">VC: Anna Freud</a>
+        </div>
+    </div>
 
-    <!-- Youtube video about Mental Health -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DxIDKZHW3-E?si=SrA-0Ct9J3RS4K3h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <a class="sources" href="https://www.youtube.com/@AnnaFreudNCCF">VC: Anna Freud</a>
+    <!-- -----------------------------------------
+         Data Section
+    ----------------------------------------- -->
+    <div class="data-container">
+        <h2>Data about Mental Health</h2>
+        <img class="dataImg" src="assets/mentalHealth.jpg" alt="Mental Health Data" />
+        <h4 class="sourceLink">SRC: https://www.niagararecovery.com/blog/mental-health-disorder</h4>
+        <ul id="data-list">
+            <li>less than 15%</li>
+            <li>15%-25%</li>
+            <li>25%-35%</li>
+            <li>35%-45%</li>
+            <li>more than 45%</li>
+        </ul>
+    </div>
 
-    <!--- Data --->
-    <h2>Data about my topic</h2>
-    <img class="dataImg" src="assets/mentalHealth.jpg" />
-    <h4>SRC: https://www.niagararecovery.com/blog/mental-health-disorder </h4>
+    <!-- -----------------------------------------
+         Impact Section
+    ----------------------------------------- -->
+    <div class="impact-container">
+        <h2 class="impact">Impact!</h2>
 
-    <ul>
-        <li> less than 15%</li>
-        <li> 15%-25%</li>
-        <li> 25%-35%</li>
-        <li> 35%-45%</li>
-        <li> >45%</li>
-    </ul>
+        <img class="dataImg" src="assets/image.png" alt="Impact Data" />
+        <h3>Where can this problem have lasting effects?</h3>
+        <p>Why?</p>
 
-    <!--- Impact --->
-    <h2>Impact!</h2>
+        <img class="dataImg" src="" alt="Impact Illustration" />
+        <h3>Where else can this problem have lasting effects?</h3>
+        <p>Why?</p>
 
-    <img class="dataImg" src="assets/image.png" />
-    <h3>Where can this problem have lasting effects?</h3>
-    <p>Why?
-    </p>
+        <img class="dataImg" src="" alt="Impact Illustration" />
+        <h3>Where else can this problem have lasting effects?</h3>
+        <p>Why?</p>
+    </div>
 
-    <img src="" />
-    <h3>Where else can this problem have lasting effects?</h3>
-    <p>Why?
-    </p>
+    <!-- -----------------------------------------
+         News Section
+    ----------------------------------------- -->
+    <div class="news-container">
+        <h2>Recent News</h2>
 
-    <img src="" />
-    <h3>Where else else can this problem have lasting effects?</h3>
-    <p>Why?
-    </p>
+        <a class="newsArticles" href="https://www.health.harvard.edu/topics/mind-and-mood">
+            <article>
+                <h3 class="newsTitles">Mind & Mood</h3>
+                <p>Your mood and your mental health affect every aspect of your life, from how you feel about yourself to your relationships with others and your physical health.</p>
+            </article>
+        </a>
 
-
-    <!--- News ---> <!--this will help with a stretch goal, if you do not want to incorporate this, then leave it alone :)-->
-    <h2>Recent News</h2>
-
-    <a class="newsArticles"
-        href="https://www.health.harvard.edu/topics/mind-and-mood">
-        <article>
-            <h3 class="newsTitles">Mind & Mood</h3>
-            <p>
-                Your mood and your mental health affect every aspect of your life, 
-                from how you feel about yourself to your relationships with others and your physical health.
-            </p>
-        </article>
-    </a>
-
-    <a class="newsArticles"
-        href="https://publichealth.tulane.edu/blog/mental-health-public-health/">
-        <article>
-            <h3 class="newsTitles">Understanding Mental Health as a Public Health Issue</h3>
-            <p>
-                Poor mental health can not only affect a person’s ability to live a fulfilling life. 
-            </p>
-        </article>
-    </a>
-
+        <a class="newsArticles" href="https://publichealth.tulane.edu/blog/mental-health-public-health/">
+            <article>
+                <h3 class="newsTitles">Understanding Mental Health as a Public Health Issue</h3>
+                <p> Poor mental health can not only affect a person’s ability to live a fulfilling life. </p>
+            </article>
+        </a>
+    </div>
 
 </body>
 
