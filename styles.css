@@ -64,8 +64,8 @@ button {
 ----------------------------------------- */
 
 .dataImg {
-    height: 60%; /* Sets the height to 60% of its parent */
-    width: 50%; /* Sets the width to 50% of its parent */
+    height: 50%; /* Sets the height to 50% of its parent */
+    width: 35%; /* Sets the width to 35% of its parent */
     display: block; /* Ensures the image is displayed as a block element */
     margin: 20px;
     border: 5px solid;
@@ -146,6 +146,7 @@ button:active {
 ----------------------------------------- */
 .data-container {
     margin-top: 70px;
+    margin-bottom: 140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,6 +176,33 @@ li {
    Impact Section Styling
 ----------------------------------------- */
 
-.impact {
-    margin: 20px 0; /* Adds margin for spacing */
+.impact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
 }
+
+/* -----------------------------------------
+   News Section Styling
+----------------------------------------- */
+.news-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+.news-article-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 2%;
+}
+
