@@ -12,7 +12,6 @@ body {
     font-style: normal;
   }
 
-
 /* Body styling */
 body {
     background-color: rgb(0, 0, 0);
@@ -184,6 +183,11 @@ li {
     margin: 0;
     
 }
+.impact-container > p {
+    width: 50%;
+    padding: 2%;
+    
+}
 
 /* -----------------------------------------
    News Section Styling
@@ -204,5 +208,54 @@ li {
     border-radius: 10px;
     padding: 10px;
     margin: 2%;
+}
+
+/* -----------------------------------------
+   Roation Box Section Styling
+----------------------------------------- */
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative; /* Positioning context for buttons */
+    margin-bottom: 10%;
+}
+
+.rotating-box {
+    width: 400px; /* Width of the box */
+    height: 400px; /* Height of the box */
+    background-color: transparent; /* Box color */
+    border: 1px solid #ccc; /* Box border */
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 5s infinite linear; /* Rotation animation */
+    transition: transform 0.5s; /* Smooth transition for rotation */
+}
+
+.content {
+    text-align: center; /* Center the text */
+    object-fit: cover;
+}
+
+
+.nav-buttons {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 15%;
+    right: 15%;
+    display: flex;
+    justify-content: space-between; /* Space out the buttons */
+    transform: translateY(-50%); /* Center the buttons */
+}
+
+.nav-button {
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    color: white; /* White color for arrows */
+    font-size: 24px; /* Font size for arrows */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px; /* Padding for buttons */
 }
 

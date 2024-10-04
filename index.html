@@ -11,8 +11,6 @@
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="assets/headerIcon.png">
 
-    <script type="text/javascript" src="script.js"></script>
-
 </head>
 
 <body>
@@ -63,6 +61,22 @@
     </div>
 
     <!-- -----------------------------------------
+         Rotating Box Section
+    ----------------------------------------- -->
+    <div class="container">
+        <div class="rotating-box">
+            <div class="content">
+                <h2 id="info-title">Information Title</h2>
+                <p id="info-text">This is some information displayed inside the rotating box.</p>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button id="prevBtn" class="nav-button" onclick="updateContent()">&#10094;</button>
+            <button id="nextBtn" class="nav-button" onclick="updateContent()">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- -----------------------------------------
          Data Section
     ----------------------------------------- -->
     <div class="data-container">
@@ -89,13 +103,22 @@
 
         <img class="dataImg" src="assets/image.png" alt="Impact Data" />
         <h3>How does mental health impact us?</h3>
-        <p>Why?</p>
+        <p>
+            Mental health affects relationships, productivity, physical health, societal structures, and more. 
+            Understanding these impacts is essential for fostering a supportive environment that 
+            promotes mental well-being for everyone.
+        </p>
 
         <h3>Where else can this problem have lasting effects?</h3>
         <p>Why?</p>
 
         <h3>Where else can this problem have lasting effects?</h3>
-        <p>Why?</p>
+        <p>
+            Mental health significantly influences various aspects of an individual's life 
+            and can have lasting effects beyond immediate emotional well-being. 
+            Understanding these impacts is crucial for fostering comprehensive support systems 
+            and promoting overall societal health.
+        </p>
     </div>
 
     <!-- -----------------------------------------
@@ -121,6 +144,7 @@
         </div>
     </div>
 
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
