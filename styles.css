@@ -24,6 +24,11 @@ h2 {
     
 }
 
+/* Navigation Hyperlinks -> Scroll Transition */
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* -----------------------------------------
    Header Styling
@@ -133,6 +138,7 @@ button:active {
     color: white;
     font-weight: lighter;
     font-size: small;
+    text-align: center;
 }
 
 .sourceLink {
@@ -218,7 +224,9 @@ li {
     display: flex;
     justify-content: center;
     position: relative; /* Positioning context for buttons */
-    margin-bottom: 10%;
+    margin-bottom: 15%;
+    top: 15px;
+
 }
 
 .rotating-box {
@@ -259,3 +267,46 @@ li {
     padding: 10px; /* Padding for buttons */
 }
 
+/* -----------------------------------------
+   Footer Styling
+----------------------------------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+footer a {
+    font-weight: 300;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+
+footer > p {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+hr {
+    margin: 5rem 10% 5rem 10%;
+    border: 0.06rem solid white;
+}

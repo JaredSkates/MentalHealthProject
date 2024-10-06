@@ -38,7 +38,7 @@
     <!-- -----------------------------------------
          About Mental Health Section
     ----------------------------------------- -->
-    <div class="aboutMentalHealth">
+    <div class="aboutMentalHealth" id="aboutMH">
         <h2 id="about-description">What is Mental Health?</h2>
         <p>
             Mental health is about our feelings, thoughts, and how we connect with others. 
@@ -58,28 +58,38 @@
             <iframe width="560" height="315" style="border: 2px solid rgb(235, 236, 241); border-radius: 10px;" src="https://www.youtube.com/embed/DxIDKZHW3-E?si=SrA-0Ct9J3RS4K3h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <a class="sourceLink" href="https://www.youtube.com/@AnnaFreudNCCF">VC: Anna Freud</a>
         </div>
+
     </div>
+
+    <!-- Line Break -->
+    <hr> 
 
     <!-- -----------------------------------------
          Rotating Box Section
     ----------------------------------------- -->
     <div class="container">
+
         <div class="rotating-box">
             <div class="content">
                 <h2 id="info-title">Information Title</h2>
                 <p id="info-text">This is some information displayed inside the rotating box.</p>
             </div>
         </div>
+
         <div class="nav-buttons">
             <button id="prevBtn" class="nav-button" onclick="updateContent()">&#10094;</button>
             <button id="nextBtn" class="nav-button" onclick="updateContent()">&#10095;</button>
         </div>
+
     </div>
+
+    <!-- Line Break -->
+    <hr> 
 
     <!-- -----------------------------------------
          Data Section
     ----------------------------------------- -->
-    <div class="data-container">
+    <div class="data-container" id="data">
         <h2>Data about Mental Health</h2>
         <div class="data-container-stats">
             <img class="dataImg data-img1" src="assets/mentalHealth.jpg" alt="Mental Health Data" />
@@ -92,25 +102,33 @@
             </ul>
         </div>
         <h4 class="sourceLink dataSourceLink">SRC: https://www.niagararecovery.com/blog/mental-health-disorder</h4>
- 
     </div>
+
+    <!-- Line Break -->
+    <hr> 
 
     <!-- -----------------------------------------
          Impact Section
     ----------------------------------------- -->
-    <div class="impact-container">
+    <div class="impact-container" id="impact">
         <h2 class="impact">Impact!</h2>
 
         <img class="dataImg" src="assets/image.png" alt="Impact Data" />
         <h3>How does mental health impact us?</h3>
         <p>
-            Mental health affects relationships, productivity, physical health, societal structures, and more. 
-            Understanding these impacts is essential for fostering a supportive environment that 
-            promotes mental well-being for everyone.
+            Poor mental health can affect a person’s ability to concentrate, 
+            perform tasks effectively, and maintain relationships. 
+            It may lead to decreased productivity, reduced motivation, 
+            and difficulty managing daily routines.
         </p>
 
-        <h3>Where else can this problem have lasting effects?</h3>
-        <p>Why?</p>
+        <h3>Why is it important to take care of yourself?</h3>
+        <p>
+            Good mental health contributes to better decision-making, stronger 
+            relationships, increased resilience, and overall happiness. 
+            It also supports physical health, as stress levels are lower 
+            and healthy habits are easier to maintain.
+        </p>
 
         <h3>Where else can this problem have lasting effects?</h3>
         <p>
@@ -121,10 +139,13 @@
         </p>
     </div>
 
+    <!-- Line Break -->
+    <hr> 
+
     <!-- -----------------------------------------
          News Section
     ----------------------------------------- -->
-    <div class="news-container">
+    <div class="news-container" id="news">
         <h2>Recent News</h2>
 
         <div class="news-article-container">
@@ -143,6 +164,20 @@
             </a>
         </div>
     </div>
+
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#aboutMH">About</a></li>
+                    <li><a href="#data">Data</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Jared Anastacio Ferrer. All Rights Reserved</p>
+    </footer>
 
     <script type="text/javascript" src="script.js"></script>
 </body>
