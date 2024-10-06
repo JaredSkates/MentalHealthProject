@@ -216,6 +216,15 @@ li {
     margin: 2%;
 }
 
+.news-article-container a {
+    text-decoration: none;
+}
+
+article h3:hover {
+    color: red;
+}
+
+
 /* -----------------------------------------
    Roation Box Section Styling
 ----------------------------------------- */

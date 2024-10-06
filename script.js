@@ -25,6 +25,7 @@ const data = [
 let currentIndex = 0;
 
 function updateContent() {
+    // .textContent allows us to get the value of elements that aren't <input> (.value)
     infoTitle.textContent = data[currentIndex].title;
     infoText.textContent = data[currentIndex].text;
 }
@@ -41,3 +42,4 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 
 // Initial content display
 updateContent();
+
